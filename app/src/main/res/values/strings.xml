@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tretta資料站</string>
+    <string name="title_activity_guide2">guide2</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="txtCredits">7月份戰鬥積分盃店舖賽:https://www.pokemontretta.com.tw/event_info.php?id=65</string>
+    <string name="txtCredits1">◎超級環的照射方法在這裡>>(https://www.youtube.com/watch?v=qksaYISeZLs）</string>
+    <string name="txtCredits2">10~11月份戰鬥積分盃店舖賽>>https://www.pokemontretta.com.tw/event_info.php?id=70</string>
+    <string name="txtCredits3">2019萬聖節嘉年華-「秋季極限挑戰盃」>>https://www.pokemontretta.com.tw/event_info.php?id=69</string>
+    <string name="txtCredits5">神奇寶貝小學堂>>http://trettago.pixnet.net/blog</string>
+    <string name="txtCredits6">TRETTA官方網站>>https://www.pokemontretta.com.tw/index.php</string>
+    <string name="txtCredits7">	神奇寶貝WIKI>>https://wiki.52poke.com/wiki/%E6%8B%9B%E5%BC%8F%E5%88%97%E8%A1%A8</string>
+    <string-array name="SPARR">
+        <item>編號</item>
+        <item>彈數</item>
+        <item>星數</item>
+        <item>血量</item>
+        <item>攻擊力</item>
+        <item>防禦力</item>
+        <item>速度</item>
+    </string-array>
+
+    <string-array name="Attributes">
+        <item>一般</item>
+        <item>格鬥</item>
+        <item>毒</item>
+        <item>地面</item>
+        <item>飛行</item>
+        <item>蟲</item>
+        <item>岩石</item>
+        <item>幽靈</item>
+        <item>鋼</item>
+        <item>火</item>
+        <item>水</item>
+        <item>電</item>
+        <item>草</item>
+        <item>冰</item>
+        <item>超能力</item>
+        <item>龍</item>
+        <item>惡</item>
+        <item>妖精</item>
+    </string-array>
+    <string name="title_activity_random">random</string>
+</resources>

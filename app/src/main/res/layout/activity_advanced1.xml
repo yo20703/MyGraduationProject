@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/backgroundcolor">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="讓超進化TRETTA的寶可夢超進化吧！希望確實可以超進化的話，要照射「超級環」喔！"
+                android:textSize="30dp"
+                android:textColor="#E91212"
+                android:gravity="center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/textview"
+                cardview:srcCompat="@mipmap/g1" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView1"
+                cardview:srcCompat="@mipmap/g2" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView2"
+                cardview:srcCompat="@mipmap/g3" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView3"
+                cardview:srcCompat="@mipmap/g4" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView4"
+                cardview:srcCompat="@mipmap/g5" />
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="沒有「超級環」也不要緊！從PokémonTRETTA聯盟在遊戲內借出「關鍵石」吧！用轉輪停止超級符號的話，可以從PokémonTRETTA聯盟總部借出「關鍵石」，也可以進行超進化喔！"
+                android:layout_below="@id/imageView5"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/textview4"
+                cardview:srcCompat="@mipmap/g6" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/textview4"
+                android:layout_toRightOf="@id/imageView6"
+                cardview:srcCompat="@mipmap/g7" />
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/imageView6"
+                cardview:srcCompat="@mipmap/g8" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/imageView7"
+                android:layout_toRightOf="@id/imageView8"
+                cardview:srcCompat="@mipmap/g9" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView8"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="@string/txtCredits1"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

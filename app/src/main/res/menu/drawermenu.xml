@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="首頁"/>
+        <item
+            android:id="@+id/nav_attributes1"
+            android:title="屬性表"/>
+        <item
+            android:id="@+id/nav_attributes"
+            android:title="圖鑑"/>
+        <item
+            android:id="@+id/nav_battle"
+
+            android:title="快速對戰"/>
+    </group>
+
+    <item android:title="攻略">
+        <menu>
+            <item
+                android:id="@+id/nav_main2"
+                android:title="基礎教學"/>
+            <item
+                android:id="@+id/nav_map"
+                android:title="進階玩法"/>
+            <item
+                android:id="@+id/nav_guide3"
+                android:title="遊戲攻略"/>
+            <item
+                android:id="@+id/nav_guide4"
+                android:title="活動訊息"/>
+            <item
+                android:id="@+id/nav_no"
+                android:title="關於TRETTA資料站"/>
+
+
+        </menu>
+    </item>
+</menu>

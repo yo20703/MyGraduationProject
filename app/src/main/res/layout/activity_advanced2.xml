@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/backgroundcolor">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="大驚喜，說不定可以換到很棒的寶可夢!?"
+                android:textSize="30dp"
+                android:textColor="#E91212"
+                android:gravity="center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/textview"
+                cardview:srcCompat="@mipmap/ch1" />
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="可以把捕獲的寶可夢交換別的寶可夢。那就是「寶可夢交換時間」！在捕捉模式中，捕獲寶可夢之後，TRETTA選手會建議交換寶可夢喔！說不定可以換到等級更高的寶可夢！"
+                android:layout_below="@id/imageView1"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="※在對戰時可以獲得的捕捉分數、寶貝能量的分數適用交換前的寶可夢。※只有交換後的寶可夢才紀錄為「捕獲的寶可夢」。"
+                android:layout_below="@id/textview4"
+                android:textColor="#EB0606"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/textview5"
+                cardview:srcCompat="@mipmap/ch2" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView2"
+                cardview:srcCompat="@mipmap/ch3" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView3"
+                cardview:srcCompat="@mipmap/ch4" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView4"
+                cardview:srcCompat="@mipmap/ch5" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView5"
+                cardview:srcCompat="@mipmap/ch6" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/imageView6"
+                cardview:srcCompat="@mipmap/ch7" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/backgroundcolor">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="寶可夢隨機出租！"
+                android:textSize="30dp"
+                android:textColor="#E91212"
+                android:gravity="center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/textview"
+                cardview:srcCompat="@mipmap/ver10" />
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="最先沒有可以掃描的TRETTA卡匣玩家也可以輕鬆玩遊戲喔！出租寶可夢也有『寶可夢 X、Y』的新神奇寶貝登場！出租寶可夢全部有10種!!隨機登場的還有「達克萊伊」等超強的寶可夢!!"
+                android:layout_below="@id/imageView1"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

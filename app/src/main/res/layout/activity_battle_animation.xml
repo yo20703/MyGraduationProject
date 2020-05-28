@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".BattleAnimation"
+    >
+
+    <ImageView
+        android:id="@+id/enemy1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_00_1"
+
+         />
+
+    <ImageView
+        android:id="@+id/enemy2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/enemy1"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_01_1" />
+
+    <ImageView
+        android:id="@+id/enemy3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/enemy2"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_02_1"
+         />
+
+    <ImageView
+        android:id="@+id/pkfriend1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_03_1"
+         />
+
+    <ImageView
+        android:id="@+id/pkfriend2"
+        android:layout_width="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/pkfriend1"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_04_1"
+         />
+
+    <ImageView
+        android:id="@+id/pkfriend3"
+        android:layout_width="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_toRightOf="@+id/pkfriend2"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/a_9_05_1"
+         />
+
+    <TextView
+        android:id="@+id/FriendName1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pkfriend1"
+        android:background="#00DD00"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/FriendHp1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="#00DD00"
+        android:layout_below="@+id/FriendName1"
+        android:gravity="center"
+        android:text="HP 100%"
+        android:textSize="20dp"
+         />
+
+    <Spinner
+        android:id="@+id/BattleSkl1"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:background="#00DD00"
+        android:layout_below="@+id/FriendHp1"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/atkbutton"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="攻擊"
+        android:onClick="handleAnimation"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+         />
+    <Button
+        android:id="@+id/catchbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atkbutton"
+        android:layout_centerHorizontal="true"
+        android:text="捕捉"
+        android:visibility="invisible"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/FriendName2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="#00DD00"
+        android:layout_toRightOf="@+id/FriendName1"
+        android:layout_below="@+id/pkfriend2"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/FriendHp2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FriendName2"
+        android:layout_toRightOf="@+id/FriendHp1"
+        android:gravity="center"
+        android:background="#00DD00"
+        android:text="HP 100%"
+        android:textSize="20dp"
+         />
+
+    <Spinner
+        android:id="@+id/BattleSkl2"
+        android:layout_below="@+id/FriendHp2"
+        android:layout_toRightOf="@+id/BattleSkl1"
+        android:layout_width="137dp"
+        android:background="#00DD00"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/FriendName3"
+        android:layout_width="135dp"
+        android:layout_below="@+id/pkfriend3"
+        android:background="#00DD00"
+        android:layout_toRightOf="@+id/FriendName2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp"
+         />
+
+    <TextView
+        android:id="@+id/FriendHp3"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FriendName3"
+        android:layout_toRightOf="@+id/FriendHp2"
+        android:background="#00DD00"
+        android:gravity="center"
+        android:text="HP 100%"
+        android:textSize="20dp"
+         />
+
+    <Spinner
+        android:id="@+id/BattleSkl3"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FriendHp3"
+        android:layout_toRightOf="@+id/BattleSkl2"
+        android:background="#00DD00"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/EnemyName1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="	#FF3333"
+         />
+
+    <TextView
+        android:id="@+id/EnemyHp1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnemyName1"
+        android:background="#FF3333"
+        android:text="HP 100%"
+        android:gravity="center"
+        android:textSize="20dp"
+         />
+
+    <TextView
+        android:id="@+id/EnemyName2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="	#FF3333"
+        android:layout_toRightOf="@+id/EnemyName1"
+        android:gravity="center"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/EnemyHp2"
+        android:layout_below="@+id/EnemyName2"
+        android:layout_toRightOf="@+id/EnemyHp1"
+        android:gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="HP 100%"
+        android:textSize="20dp"
+        android:background="	#FF3333"
+         />
+
+    <TextView
+        android:id="@+id/EnemyName3"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/EnemyName2"
+        android:background="	#FF3333"
+        android:gravity="center"
+        android:text="哲爾哲爾哲爾哲爾"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/EnemyHp3"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnemyName3"
+        android:layout_toRightOf="@+id/EnemyHp2"
+        android:background="#FF3333"
+        android:gravity="center"
+        android:text="HP 100%"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/effect1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:background="#FF3333"
+        android:layout_below="@+id/EnemyHp1"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/effect2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:layout_toRightOf="@+id/EnemyName1"
+        android:layout_below="@+id/EnemyHp1"
+        android:background="#FF3333"
+        />
+    <TextView
+        android:id="@+id/effect3"
+        android:layout_width="135dp"
+        android:text=" "
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/EnemyName2"
+        android:layout_below="@+id/EnemyHp1"
+            android:background="#FF3333"
+
+            />
+    <TextView
+        android:id="@+id/effect4"
+        android:layout_width="130dp"
+        android:text=" "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BattleSkl1"
+        android:background="#00DD00"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/effect5"
+        android:layout_width="130dp"
+        android:text=" "
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/EnemyName1"
+        android:layout_below="@+id/BattleSkl1"
+        android:background="#00DD00"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/effect6"
+        android:layout_width="135dp"
+        android:text=" "
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/EnemyName2"
+        android:layout_below="@+id/BattleSkl1"
+        android:background="#00DD00"
+        android:gravity="center"
+
+        />
+
+
+</RelativeLayout>

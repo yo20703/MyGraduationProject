@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        tools:contentPadding="0"
+>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:gravity="center_horizontal"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="基礎對戰"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+               />
+
+            <Button
+                android:id="@+id/basis1"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="#FFCDD2"
+                android:text="開始遊戲"
+                android:textSize="40dp"
+/>
+
+            <Button
+                android:id="@+id/basis2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/basis1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="#F8BBD0"
+                android:text="搜尋模式"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/basis3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/basis2"
+                android:background="#E1BEE7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="對戰模式"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/basis4"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/basis3"
+                android:background="#D1C4E9"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="捕捉模式"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/basis5"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#C5CAE9"
+                android:layout_below="@id/basis4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="出租寶可夢"
+                android:textSize="40dp" />
+            <Button
+                android:id="@+id/basis6"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@id/basis5"
+                android:background="#BBDEFB"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="介紹PokemonTRETTA"
+                android:textSize="30dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.DrawerLayout>

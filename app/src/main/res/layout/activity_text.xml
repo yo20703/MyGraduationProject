@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px">
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>

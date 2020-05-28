@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@drawable/backgroundcolor">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            cardview:srcCompat="@mipmap/activity2" />
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜尋模式"
+            android:layout_below="@id/imageView2"
+            android:textSize="30dp"
+            android:textColor="#0288D1"/>
+       <TextView
+           android:id="@+id/textview2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="在搜尋模式中，地形及寶可夢的剪影（形狀）就是提示，搜尋想要捕捉的寶可夢。"
+           android:layout_below="@id/textview1"
+           android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="轉動轉輪搜尋野生的寶可夢吧！轉動轉輪的話，畫面內的粉紅色區域會移動搜尋神奇寶貝囉！選擇地形之後，按按鍵！可以發現3隻寶可夢喔！"
+            android:textSize="20dp"
+            android:layout_below="@id/textview2"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

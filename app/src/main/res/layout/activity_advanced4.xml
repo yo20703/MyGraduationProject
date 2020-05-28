@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/backgroundcolor">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="方法:基準點我們的方法叫基準點，在機台選定幾個固定的地方作為基準點，然後注意紅色和黃色的位置，觀察
+剛好隱沒於基準點的時候，依照位置、頻率按下按鍵，擊中1/3的位置
+首先介紹兩個基準點:
+A:轉盤右邊的界線
+B:機台左方約45度角，有一個突起的位置
+"
+                android:textSize="20dp" />
+            <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cardview:srcCompat="@mipmap/med1"
+                android:layout_below="@id/textview1"/>
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="基準點:A輪盤最右邊的邊界線
+原理:單一個黃色區塊剛好隱沒於基準點A時
+ 兩個紅色區塊出來之後，會出現一個單獨的黃色區塊，因此從單獨一格黃色區塊剛好隱沒於基準點時=
+正好擊中+20前1/3"
+                android:layout_below="@id/imageView1"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med2"
+                android:layout_below="@id/textview2"/>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med3"
+                android:layout_below="@id/imageView2"/>
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="基準點:A輪盤最右邊的邊界線
+原理:第二黃色區塊剛好隱沒於基準點C時
+當地二個黃色區塊剛好隱沒於基準點C時=剛好擊中+35前1/3
+"
+                android:layout_below="@id/imageView3"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med4"
+                android:layout_below="@id/textview3"/>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med5"
+                android:layout_below="@id/imageView4"/>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med6"
+                android:layout_below="@id/imageView5"/>
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="基準點:輪盤左右邊下方的邊界線(A,B)
+原理:利用數數字，當紫色M球剛好從左邊基準點B出現時按下去
+"
+                android:layout_below="@id/imageView6"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med7"
+                android:layout_below="@id/textview7"/>
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:srcCompat="@mipmap/med8"
+                android:layout_below="@id/imageView7"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

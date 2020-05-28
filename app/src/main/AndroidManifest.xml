@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ge.myapplication123">
+
+    <uses-permission android:name="android.permission.INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/a_9_00_1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Main3Activity"></activity>
+        <activity android:name=".raiders4" />
+        <activity android:name=".raiders3" />
+        <activity
+            android:name=".random"
+            android:label="@string/title_activity_random"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BattleEnd" />
+        <activity android:name=".BattleAnimation" />
+        <activity android:name=".circle" />
+        <activity android:name=".advanced4" />
+        <activity android:name=".advanced3" />
+        <activity android:name=".advanced2" />
+        <activity android:name=".advanced1" />
+        <activity android:name=".raiders2" />
+        <activity android:name=".raiders1" />
+        <activity android:name=".battle2" />
+        <activity android:name=".basis6" />
+        <activity android:name=".basis5" />
+        <activity android:name=".basis4" />
+        <activity android:name=".basis3" />
+        <activity android:name=".basis2" />
+        <activity android:name=".basis01" />
+        <activity
+            android:name=".attributes1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guide2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guide3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="anddroid.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".illustration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".backpack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".illustration2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".battle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".guide"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

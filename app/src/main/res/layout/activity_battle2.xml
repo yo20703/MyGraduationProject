@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".battle2">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/backgroundcolor"
+        android:columnWidth="120dp"
+        tools:ignore="MissingConstraints">
+
+        <com.example.ge.myapplication123.MyGridView
+            android:id="@+id/textgrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:horizontalSpacing="12dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
+    </ScrollView>
+    <GridView
+        android:id="@+id/battlegrid1"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:numColumns="3"
+        tools:ignore="MissingConstraints"
+        android:background="#FFCCCC"/>
+    <GridView
+        android:id="@+id/battlegrid2"
+        android:layout_below="@+id/battlegrid1"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:numColumns="3"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/backgroundcolor">
+    </GridView>
+    <Button
+        android:id="@+id/finishbutton"
+        android:text="戰鬥開始"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/battlegrid2"
+        android:layout_toRightOf="@+id/selectbutton"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/selectbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battlegrid2"
+        android:layout_marginTop="0dp"
+        android:text="選擇完成"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+    <Button
+        android:id="@+id/cleanbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battlegrid2"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_toRightOf="@+id/selectbutton"
+        android:layout_marginLeft="210dp"
+        android:text="清除選擇"
+        />
+
+
+</RelativeLayout>

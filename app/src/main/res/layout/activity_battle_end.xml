@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".BattleEnd">
+    <TextView
+        android:id="@+id/textend"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="對戰結束"
+        android:textSize="70dp"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:text="繼續挑戰"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/buttonleave"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:background="@drawable/attbutton"
+        android:shadowColor="#A8A8A8"
+        android:layout_toRightOf="@+id/buttonnext"
+        android:text="回首頁"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        android:id="@+id/catch1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textend"/>
+
+    <ImageView
+        android:id="@+id/catch2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/catch1" />
+    <ImageView
+        android:id="@+id/catch3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/catch2"/>
+
+    <TextView
+        android:id="@+id/catch1name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textend"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:text="名稱:"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/catch1text"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:text="捕獲失敗"
+        android:textSize="45dp"
+        android:layout_below="@+id/catch1name"/>
+
+    <TextView
+        android:id="@+id/catch2star"
+        android:text="星等:"
+        android:textSize="40dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:layout_below="@+id/catch1text"/>
+    <TextView
+        android:id="@+id/catch2text"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:text="捕獲失敗"
+        android:textSize="45dp"
+        android:layout_below="@+id/catch2star"/>
+
+    <TextView
+        android:id="@+id/catch3name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/catch2text"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:text="名稱:"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/catch3text"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/catch1"
+        android:text="捕獲失敗"
+        android:textSize="45dp"
+        android:layout_below="@+id/catch3name"/>
+
+</RelativeLayout>

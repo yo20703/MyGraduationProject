@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@drawable/backgroundcolor">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            cardview:srcCompat="@mipmap/start" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="遊戲開始  用PokémonTRETTA遊戲時，有TRETTA報告的人可以讀取資料喔！使用新TRETTA報告時，登錄年齡及姓名喔！"
+            android:textSize="20dp"
+            android:layout_below="@id/imageView2" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你要怎樣才能捉到PokémonTRETTA呢？"
+            android:textSize="20dp"
+            android:layout_below="@id/textview1"
+            android:textColor="#DD0F0F" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="投入30元之後，選擇如何取得PokémonTRETTA。"
+            android:textSize="20dp"
+            android:layout_below="@id/textview2" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="玩遊戲捕捉"
+            android:textSize="30dp"
+            android:textColor="#0D8EF7"
+            android:layout_below="@id/textview3" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜尋寶可夢，進行對戰再捕捉的模式。發現那種寶可夢，捉不捉的到呢？ "
+            android:textSize="20dp"
+            android:layout_below="@id/textview4" />
+
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="現在馬上捕捉"
+            android:textSize="30dp"
+            android:textColor="#0D8EF7"
+            android:layout_below="@id/textview5" />
+
+        <TextView
+            android:id="@+id/textview7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不玩遊戲，可以玩投出超速球獲得PokémonTRETTA的「超速球模式」喔！會出來那隻PokémonTRETTA呢？好期待喔！"
+            android:textSize="20dp"
+            android:layout_below="@id/textview6" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

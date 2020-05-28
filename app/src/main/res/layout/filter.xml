@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+    android:background="@drawable/backgroundcolor"
+        android:orientation="vertical"
+    >
+
+        <CheckBox
+            android:id="@+id/Normal"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/textid"
+            android:padding="5dp"
+            android:text="一般" />
+
+        <CheckBox
+            android:id="@+id/Fighter"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textid"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_toRightOf="@id/Normal"
+            android:padding="5dp"
+            android:text="格鬥"/>
+
+        <CheckBox
+            android:id="@+id/Poison"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/textid"
+            android:layout_toRightOf="@id/Fighter"
+            android:padding="5dp"
+            android:text="毒" />
+
+        <CheckBox
+            android:id="@+id/Ground"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@id/Superpower"
+            android:layout_toRightOf="@id/Fairy"
+            android:padding="5dp"
+            android:text="地面"/>
+
+        <CheckBox
+            android:id="@+id/Fly"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Normal"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="飛行" />
+
+        <CheckBox
+            android:id="@+id/Insect"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Fighter"
+            android:layout_toRightOf="@id/Fly"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="蟲" />
+
+        <CheckBox
+            android:id="@+id/Rock"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Poison"
+            android:layout_toRightOf="@id/Insect"
+            android:padding="5dp"
+            android:text="岩石"/>
+
+        <CheckBox
+            android:id="@+id/Ghost"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Evil"
+            android:padding="5dp"
+            android:text="幽靈"/>
+
+        <CheckBox
+            android:id="@+id/Steel"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Fly"
+            android:padding="5dp"
+            android:text="鋼"/>
+
+        <CheckBox
+            android:id="@+id/Inflammation"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Insect"
+            android:layout_toRightOf="@id/Steel"
+            android:padding="5dp"
+            android:text="火" />
+
+        <CheckBox
+            android:id="@+id/Water"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Rock"
+            android:layout_toRightOf="@id/Inflammation"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="水"/>
+
+        <CheckBox
+            android:id="@+id/Electricity"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Fairy"
+            android:layout_toRightOf="@id/Ghost"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="電" />
+
+        <CheckBox
+            android:id="@+id/Grass"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Steel"
+            android:padding="5dp"
+            android:text="草" />
+
+        <CheckBox
+            android:id="@+id/Ice"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Inflammation"
+            android:layout_toRightOf="@+id/Grass"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="冰" />
+
+        <CheckBox
+            android:id="@+id/Superpower"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:layout_below="@+id/Water"
+            android:layout_toRightOf="@+id/Ice"
+            android:padding="5dp"
+            android:text="超能力"/>
+
+        <CheckBox
+            android:id="@+id/Dragon"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:padding="5dp"
+            android:layout_below="@+id/Ground"
+            android:layout_toRightOf="@id/Electricity"
+            android:text="龍" />
+
+        <CheckBox
+            android:id="@+id/Evil"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:padding="5dp"
+            android:layout_below="@id/Grass"
+            android:text="惡" />
+
+        <CheckBox
+            android:id="@+id/Fairy"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/Ice"
+            android:layout_toRightOf="@+id/Evil"
+            android:text="妖精"/>
+        <TextView
+            android:id="@+id/textid"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="屬性"
+            android:textSize="30dp"
+            />
+    </RelativeLayout>

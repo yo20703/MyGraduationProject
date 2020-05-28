@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="#C6FF00">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="輔助攻擊：推薦招式威力 150 的以下卡片U4四星噴火龍X、U2四星雷吉奇卡斯、U1四星帝牙盧卡"
+                android:textColor="#FF8A65"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview"
+                android:text="150 炎/龍/岩石/一般-總結"
+                android:textColor="#F50B0B"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview1"
+                android:text="：招式威力最強，若剋屬性的卡片不夠，可用這一組的卡片做主攻擊手。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview2"
+                android:text="150 炎：U4四星噴火龍X、U2四星萊希拉姆、U2三星火焰雞、Z1二星洛托姆連段攻擊"
+                android:textColor="#FF8A65"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview3"
+                android:text="U2三星火焰雞雖然排在很後面，但打起來有不輸四星等級的效果，C/P很高值得推薦，但要注
+意其血量很低。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview4"
+                android:text="Z2三星炎武王可注意，其招式威力高達 150"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview5"
+                android:text="Z1二星洛托姆可注意，雖然招式威力 130，但可進行連段攻擊，共可打 5 次，威力強大可打死
+金卡酋雷姆。"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview6"
+                android:background="@mipmap/raiders02"/>
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView"
+                android:text="150 龍：U3/U1四星帝牙盧卡、05黑卡烈空坐、U2四星萊希拉姆、U3四星拉帝
+歐斯"
+                android:textColor="#FF8A65"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview7"
+                android:text="U3/U1四星帝牙盧卡本體為鋼系，防禦力很強(請看屬性表)，但輔助攻擊U3帝牙盧卡會用鋼招
+較弱，要用U1帝牙盧卡才是威力150的龍招。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview8"
+                android:text="05黑卡烈空坐要注意其血量較低，但因為可超進化，再加上兩招的威力都在120以上，因此列
+入推薦。若有 Z3黑卡烈空坐 取代當然最好，問題是那時候也快結束了。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview9"
+                android:text="U3四星拉帝歐斯的龍招在水準之上，血量和命中率都不錯，重點是其速度高達 182，不容易失誤，打後彈速度快的強卡很需要，因此列入推薦。"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview10"
+                android:background="@mipmap/raider03" />
+            <TextView
+                android:id="@+id/textview11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView1"
+                android:text="三星岩殿居蟹血量很低，但因為機台有強化，打起很痛，因此列入推薦，只適合用來打第一招，注意其速度只有 51，打後彈強卡失誤高。"
+                android:textColor="#F50B0B"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview11"
+                android:text="U2四星雷吉奇卡斯血量夠加上機台強化，一般系雖然沒有尅屬性，打起來卻有尅屬性的效果，
+打起來很痛，傷害值接近剋屬性的175，故可用175來參考，但最高不會超過175。加上只有一
+招，輔助攻擊時威力強大，萬用強卡當之無愧 !
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview12"
+                android:text="150 炎/龍/岩石/一般-總結"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview13"
+                android:text="03四星班吉拉血量較低，但因為可超進化打兩招，在沒有雷吉奇卡斯之前是一般系最強，因此
+列入推薦。但在第八彈之後，就被雷吉取代了。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview14"
+                android:text="03四星班吉拉血量較低，但因為可超進化打兩招，在沒有雷吉奇卡斯之前是一般系最強，因此
+列入推薦。但在第八彈之後，就被雷吉取代了。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview15"
+                android:text="Z1三星雷電雲可注意，第三回合轉換後招式威力高達 150，速度 188 也夠高，打後彈強卡不易失誤。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview16"
+                android:text="U1三星班吉拉可注意，其招式威力高達 150，但速度 77 還是太低容易失誤。"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview17"
+                android:background="@mipmap/raiders04"/>
+            <TextView
+                android:id="@+id/textview18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView2"
+                android:text="140 飛行/冰/超能力/鋼-總結：除了「Z1黑卡伊裴爾塔爾、U2金卡酋雷姆」其它普遍有缺點，非必要性，沒有也沒關係。"
+                android:textColor="#FF8A65"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview18"
+                android:text="140 飛行、冰：Z1黑卡伊裴爾塔爾、U1金卡烈空坐、U2三星火焰雞、U2金卡酋雷姆、Z2黑卡白/黑酋雷姆"
+                android:textColor="#FF8A65"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview19"
+                android:text="Z1黑卡伊裴爾塔爾是飛行系最強，速度 190 很不錯，沒剋屬性時也可用來當主要攻擊手。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview20"
+                android:text="Z1/U1金卡烈空坐沒有很強，但算是Z彈以外飛行系最強，加上血量夠又可超捕獲，因此列入推
+薦。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview21"
+                android:text="U2三星火焰雞雖然排在很後面，但打起來有不輸四星等級的效果，C/P很高值得推薦，但要注意其血量很低。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview22"
+                android:text="Z2/U2金卡酋雷姆雖然招式威力只有65，但機台強化2倍，打起來卻有130的效果。加上血量"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview23"
+                android:text="Z2黑卡白/黑酋雷姆可注意，其招式威力高達 140，速度 186 很不錯，沒剋屬性時也可用來當主要攻擊手"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview24"
+                android:background="@mipmap/raiders05"/>
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

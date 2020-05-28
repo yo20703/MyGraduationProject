@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pk_level">
+        <item>第1彈</item>
+        <item>第2彈</item>
+        <item>第3彈</item>
+        <item>第4彈</item>
+        <item>第5彈</item>
+        <item>第6彈</item>
+        <item>第7彈</item>
+        <item>第8彈</item>
+        <item>第9彈</item>
+        <item>第10彈</item>
+        <item>第11彈</item>
+        <item>第12彈</item>
+        <item>第13彈</item>
+    </string-array>
+</resources>

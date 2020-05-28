@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="poke_image">
+    <item>R.drawable,a100</item>
+    <item>R.drawable.a101</item>
+    <item>R.drawable.a102</item>
+    </array>
+</resources>

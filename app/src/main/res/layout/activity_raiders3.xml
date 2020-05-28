@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cardview:cardCornerRadius="15dp"
+    android:layout_gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardCornerRadius="15dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="#C6FF00">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="打卡比賽一定要先了解屬性表，優先以「尅屬性」來打，以下是來自官方的屬性表："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview"
+                android:text="攻擊方：看其「招式屬性」；被攻擊方：看其「本體屬性」。"
+                android:textColor="#F50808"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview1"
+                android:background="@mipmap/raiders01"/>
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView"
+                android:text="命中率 100 也會失誤 !"
+                android:textColor="#F50808"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview2"
+                android:text="原因在於速度，如果速度小於對方，就算命中率 100 也會被對方躲開而導致失誤 !"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview3"
+                android:text="推薦卡片的標準"
+                android:textColor="#F50808"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview4"
+                android:textColor="#F50808"
+                android:text="1. Z1 彈以前的卡："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview5"
+                android:text="Z1~Z4 的卡都超強，一定會排在最前面，打到話就換掉手上的卡，而且用之
+前彈的卡絕對都能打下來(Z2金卡基格爾德，標準血量最高 627，沒有任何一張卡能打下來，只
+能用綠光球和一擊必殺來拼，也算是用之前彈的卡能打下來了)。因此會推薦 Z1 以前的卡為
+主，及少部份 Z1 和 Z2 的卡。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview6"
+                android:textColor="#F50808"
+                android:text="2. 招式攻擊力 120 以上"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview7"
+                android:text="：根據 Pokémon Tretta 傷害值公式，招式攻擊力佔最大比重，招式
+攻擊力 120 以上的卡才夠強 !"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview8"
+                android:textColor="#F50808"
+                android:text="3. 最高傷害值 150 以上："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview9"
+                android:text="：按到 +50/+35 且剋屬性時的標準傷害值 150 以上，才稱得上是有戰
+力的強卡。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview10"
+                android:textColor="#F50808"
+                android:text="4. 標準血量 150 以上："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview11"
+                android:text="每一彈的卡是愈來愈強，血量不夠是撐不到第三回合的。如果有血量低的強卡，只打第一回合或是第二回合超進化也是可以接受。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview12"
+                android:textColor="#F50808"
+                android:text="5. 命中率 90 以上："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview13"
+                android:text="：這很難講，因為命中率要還看對方的 速度 而定。因此也會推荐命中率 85的卡。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview14"
+                android:textColor="#F50808"
+                android:text="4. 標準血量 150 以上："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview15"
+                android:text="每一彈的卡是愈來愈強，血量不夠是撐不到第三回合的。如果有血量低的強卡，只打第一回合或是第二回合超進化也是可以接受。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview16"
+                android:textColor="#F50808"
+                android:text="6.在該屬性最強的卡："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview17"
+                android:text="當該屬性的數值都不符合以上條件，又不能被其它屬性取代時，只能選最強的來用。
+"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview18"
+                android:textColor="#F50808"
+                android:text="7.機台程式特別強化的卡"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview19"
+                android:text="：用這些卡打起來特別痛，當然要推薦。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview20"
+                android:textColor="#F50808"
+                android:text="8. Z1 以後可注意的卡"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview21"
+                android:text="例如雖然是三星卡，招式攻擊力卻高達 150 的卡。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview22"
+                android:textColor="#F50808"
+                android:text="9.價格可以接受的卡："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview23"
+                android:text="也就是 C/P 值比較高的卡，基本上是 500元以下 的卡才推薦。"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview24"
+                android:textColor="#F50808"
+                android:text="10.P卡以外的卡："
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textview26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview25"
+                android:text="因為 P 卡沒有寫出數值，無法計算比較，只能靠實際打和看別人打的影片，才知道強不強。
+"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview26"
+                android:background="@mipmap/ver6"/>
+            <TextView
+                android:id="@id/textview27"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageView1"
+                android:text="Z4"
+                android:textColor="@color/red"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@id/textview28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview27"
+                android:text="金卡-夢幻：(3)高原、(5)洞窟、(2)水邊
+" />
+            <TextView
+                android:id="@id/textview29"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview28"
+                android:text="金卡-胡帕：(4)遺跡、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview29"
+                android:text="黑卡-超夢X：(5)洞窟、(2)水邊
+" />
+
+            <TextView
+                android:id="@id/textview31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview30"
+                android:text="黑卡-超夢Y：(5)洞窟、(2)水邊" />
+            <TextView
+                android:id="@id/textview32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview31"
+                android:text="焰白酋雷姆：(5)洞窟、(1)森林" />
+            <TextView
+                android:id="@id/textview33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview32"
+                android:text="闇黑酋雷姆：(2)水邊、(4)遺跡、(6)海岸" />
+            <TextView
+                android:id="@id/textview34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview33"
+                android:text="洛奇亞：(5)洞窟、(3)高原、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview34"
+                android:text="鳳王：(4)遺跡、(1)森林" />
+            <TextView
+                android:id="@id/textview36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview35"
+                android:text="固拉多：(5)洞窟、(3)高原" />
+            <TextView
+                android:id="@id/textview37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview36"
+                android:text="蓋歐卡：(6)海岸、(2)水邊、(1)森林" />
+            <TextView
+                android:id="@id/textview38"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview37"
+                android:text="Z3"
+                android:textColor="@color/red"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@id/textview39"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview38"
+                android:text="金卡-超夢：(5)洞窟、(2)水邊、(1)森林
+" />
+
+            <TextView
+                android:id="@id/textview40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview39"
+                android:text="金卡-阿爾宙斯：(6)海岸、(3)高原、(5)洞窟" />
+            <TextView
+                android:id="@id/textview41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview40"
+                android:text="黑卡-烈空坐：(3*)高原、(2)水邊" />
+            <TextView
+                android:id="@id/textview42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview41"
+                android:text="哲爾尼亞斯：(1*)森林、(2)水邊" />
+            <TextView
+                android:id="@id/textview43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview42"
+                android:text="伊裴爾塔爾：(3)高原、(5)洞窟" />
+            <TextView
+                android:id="@id/textview44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview43"
+                android:text="萊希拉姆：(1)森林、(3)高原" />
+            <TextView
+                android:id="@id/textview45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview44"
+                android:text="捷克羅姆：(1)森林、(3)高原、(2)水邊" />
+            <TextView
+                android:id="@id/textview46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview45"
+                android:text="帝牙盧卡：(3)高原、(5)洞窟、(1)森林" />
+            <TextView
+                android:id="@id/textview47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview46"
+                android:text="帕路奇亞：(2)水邊、(6)海岸、(1)森林" />
+            <TextView
+                android:id="@id/textview48"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview47"
+                android:text="固拉多：(5)洞窟、(3)高原" />
+            <TextView
+                android:id="@id/textview49"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview48"
+                android:text="蓋歐卡：(6)海岸、(2)水邊、(1)森林" />
+
+            <TextView
+                android:id="@id/textview50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview49"
+                android:text="Z2"
+                android:textColor="@color/red"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@id/textview52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview50"
+                android:text="金卡-基格爾德：(4)遺跡、(1)森林
+" />
+            <TextView
+                android:id="@id/textview53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview52"
+                android:text="金卡-酋雷姆：(5)洞窟、(6)海岸、(2)水邊
+" />
+            <TextView
+                android:id="@id/textview54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview53"
+                android:text="黑卡-焰白酋雷姆：(5)洞窟、(1)森林
+" />
+            <TextView
+                android:id="@id/textview55"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview54"
+                android:text="黑卡-闇黑酋雷姆：(2)水邊、(4)遺跡、(6)海岸
+" />
+            <TextView
+                android:id="@id/textview56"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview55"
+                android:text="勾帕路翁：(1)森林、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview57"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview56"
+                android:text="代拉基翁：(5)洞窟、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview58"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview57"
+                android:text="畢力吉翁：(6)海岸、(1)森林、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview59"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview58"
+                android:text="基拉祈：(6)海岸、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview59"
+                android:text="小智甲賀忍蛙：(6)海岸、(2)水邊、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview61"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview60"
+                android:text="基格爾德10%：(2)水邊、(1)森林、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview62"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview61"
+                android:text="莎莉娜仙子精靈：(2)水邊、(1)森林、(4)遺跡
+" />
+            <TextView
+                android:id="@id/textview63"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview62"
+                android:text="Z1"
+                android:textColor="@color/red"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@id/textview64"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview63"
+                android:text="艾嵐噴火龍：(3)高原、(1)森林
+" />
+            <TextView
+                android:id="@id/textview65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview64"
+                android:text="金卡-基格爾德：(4)遺跡、(1)森林
+" />
+            <TextView
+                android:id="@id/textview66"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview65"
+                android:text="金卡-烈空坐：(3*)高原、(2)水邊
+" />
+            <TextView
+                android:id="@id/textview67"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview66"
+                android:text="黑卡-哲爾尼亞斯：(1*)森林、(2)水邊" />
+            <TextView
+                android:id="@id/textview68"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview67"
+                android:text="黑卡-伊裴爾塔爾：(3)高原、(5)洞窟" />
+            <TextView
+                android:id="@id/textview69"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview68"
+                android:text="雷公：(1)森林、(2)水邊" />
+            <TextView
+                android:id="@id/textview70"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview69"
+                android:text="炎帝：(3)高原、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview71"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview70"
+                android:text="水君：(2)水邊、(1)森林" />
+            <TextView
+                android:id="@id/textview72"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview71"
+                android:text="大吾巨金怪：(4)遺跡、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview73"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview72"
+                android:text="小智皮卡丘：(2)水邊、(1)森林、(5)洞窟
+" />
+            <TextView
+                android:id="@id/textview74"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textview73"
+                android:text="達克萊伊：(5)洞窟
+" />
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>
